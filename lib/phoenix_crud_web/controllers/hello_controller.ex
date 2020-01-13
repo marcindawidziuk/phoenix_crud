@@ -6,5 +6,8 @@ defmodule PhoenixCrudWeb.HelloController do
     render(conn, "index.html")
   end
 
+  def show(conn, %{"msg" => msg}) do
+    render(conn, "show.html", msg: msg)
+  end
 
 end
