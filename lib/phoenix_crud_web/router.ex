@@ -19,6 +19,9 @@ defmodule PhoenixCrudWeb.Router do
     get "/", PageController, :index
     get "/hello", HelloController, :index
     get "/hello/:msg", HelloController, :show
+
+    resources "/exercises", ExerciseController
+
   end
 
   # Other scopes may use custom stacks.
